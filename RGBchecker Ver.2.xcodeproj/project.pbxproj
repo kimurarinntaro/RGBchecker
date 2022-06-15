@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		0D430D25285A13E6005426D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D430D24285A13E6005426D7 /* AppDelegate.swift */; };
 		0D430D27285A13E6005426D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D430D26285A13E6005426D7 /* SceneDelegate.swift */; };
-		0D430D29285A13E6005426D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D430D28285A13E6005426D7 /* ViewController.swift */; };
 		0D430D2C285A13E6005426D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D430D2A285A13E6005426D7 /* Main.storyboard */; };
 		0D430D2E285A13E7005426D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D430D2D285A13E7005426D7 /* Assets.xcassets */; };
 		0D430D31285A13E7005426D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D430D2F285A13E7005426D7 /* LaunchScreen.storyboard */; };
 		0D430D3C285A13E7005426D7 /* RGBchecker_Ver_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D430D3B285A13E7005426D7 /* RGBchecker_Ver_2Tests.swift */; };
 		0D430D46285A13E7005426D7 /* RGBchecker_Ver_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D430D45285A13E7005426D7 /* RGBchecker_Ver_2UITests.swift */; };
 		0D430D48285A13E7005426D7 /* RGBchecker_Ver_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D430D47285A13E7005426D7 /* RGBchecker_Ver_2UITestsLaunchTests.swift */; };
+		0D430D55285A158A005426D7 /* RGBchecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D430D54285A158A005426D7 /* RGBchecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		0D430D21285A13E6005426D7 /* RGBchecker Ver.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RGBchecker Ver.2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D430D24285A13E6005426D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D430D26285A13E6005426D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0D430D28285A13E6005426D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D430D2B285A13E6005426D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D430D2D285A13E7005426D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D430D30285A13E7005426D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		0D430D41285A13E7005426D7 /* RGBchecker Ver.2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RGBchecker Ver.2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D430D45285A13E7005426D7 /* RGBchecker_Ver_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBchecker_Ver_2UITests.swift; sourceTree = "<group>"; };
 		0D430D47285A13E7005426D7 /* RGBchecker_Ver_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBchecker_Ver_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D430D54285A158A005426D7 /* RGBchecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBchecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			children = (
 				0D430D24285A13E6005426D7 /* AppDelegate.swift */,
 				0D430D26285A13E6005426D7 /* SceneDelegate.swift */,
-				0D430D28285A13E6005426D7 /* ViewController.swift */,
+				0D430D54285A158A005426D7 /* RGBchecker.swift */,
 				0D430D2A285A13E6005426D7 /* Main.storyboard */,
 				0D430D2D285A13E7005426D7 /* Assets.xcassets */,
 				0D430D2F285A13E7005426D7 /* LaunchScreen.storyboard */,
@@ -258,9 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D430D29285A13E6005426D7 /* ViewController.swift in Sources */,
 				0D430D25285A13E6005426D7 /* AppDelegate.swift in Sources */,
 				0D430D27285A13E6005426D7 /* SceneDelegate.swift in Sources */,
+				0D430D55285A158A005426D7 /* RGBchecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
