@@ -15,43 +15,80 @@ class RGBchecker:UIViewController,UITableViewDelegate,UITableViewDataSource{
     @IBOutlet weak var RGBColor: UILabel!
     @IBOutlet weak var RGBTable: UITableView!
     
-    var red:CGFloat = 0
-    var green:CGFloat = 0
-    var blue:CGFloat = 0
+    var red:CGFloat = 255
+    var green:CGFloat = 255
+    var blue:CGFloat = 255
     
     @IBAction func RedSlider(_ sender: UISlider) {
         red = CGFloat(sender.value)
         RedColor.text = "R:\(String(format: "%.0f", red))"
-        ChangeTextAndColor()
+        ChangeText()
     }
     @IBAction func GreenSlider(_ sender: UISlider) {
         green = CGFloat(sender.value)
         GreenColor.text = "G:\(String(format: "%.0f", green))"
-        ChangeTextAndColor()
+        ChangeText()
     }
     @IBAction func BlueSlider(_ sender: UISlider) {
         blue = CGFloat(sender.value)
         BlueColor.text = "B:\(String(format: "%.0f", blue))"
-        ChangeTextAndColor()
+        ChangeText()
     }
     
-    func ChangeTextAndColor(){
+    func ChangeText(){
         RGBColor.text = "RGBColor is #\(String(NSString(format: "%02X%02X%02X", Int(red), Int(green), Int(blue)))) for Hexadecimal"
-//        RGBTable.backgroundColor = UIColor(red:red/255,green:green/255, blue:blue/255, alpha: 1)
+        RGBTable.reloadData()
     }
     
+    
+    
+    func CheckValue(value:Int) -> Int{
+        var value = value
+        if value > 255 {
+            value = 255
+        } else if value < 0{
+            value = 0
+        }
+        return value
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 7
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "RGBTableViewCell")
         
-        cell.backgroundColor = UIColor(red:red/255,green:green/255, blue:blue/255, alpha: 1)
+        var r = red, g = green, b = blue
+        switch indexPath.row{
+        case 1:
+            r = CGFloat(CheckValue(value:Int(red) - 10))
+        case 2:
+            r = CGFloat(CheckValue(value:Int(red) + 10))
+        case 3:
+            g = CGFloat(CheckValue(value:Int(green) - 10))
+        case 4:
+            g = CGFloat(CheckValue(value:Int(green) + 10))
+        case 5:
+            b = CGFloat(CheckValue(value:Int(blue) - 10))
+        case 6:
+            b = CGFloat(CheckValue(value:Int(blue) + 10))
+        default:
+            break
+        }
+        
+        debugPrint(r,g,b)
+        
+        cell.backgroundColor = UIColor(red:r/255,green:g/255, blue:b/255, alpha: 1)
+        cell.textLabel!.text = " #\(String(NSString(format: "%02X%02X%02X", Int(r), Int(g), Int(b)))) "
+        cell.textLabel!.font = UIFont.systemFont(ofSize: 20) 
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 60
+        }
    
     override func viewDidLoad() {
         super.viewDidLoad()
