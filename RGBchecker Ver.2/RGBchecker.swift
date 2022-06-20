@@ -19,6 +19,11 @@ class RGBchecker:UIViewController,UITableViewDelegate,UITableViewDataSource{
     var green:CGFloat = 255
     var blue:CGFloat = 255
     
+    static var RedColorList:[CGFloat] = []
+    static var GreenColorList:[CGFloat] = []
+    static var BlueColorList:[CGFloat] = []
+    static var ListProjectName:[String] = []
+    
     @IBAction func RedSlider(_ sender: UISlider) {
         red = CGFloat(sender.value)
         RedColor.text = "R:\(String(format: "%.0f", red))"
@@ -77,8 +82,6 @@ class RGBchecker:UIViewController,UITableViewDelegate,UITableViewDataSource{
             break
         }
         
-        debugPrint(r,g,b)
-        
         cell.backgroundColor = UIColor(red:r/255,green:g/255, blue:b/255, alpha: 1)
         cell.textLabel!.text = " #\(String(NSString(format: "%02X%02X%02X", Int(r), Int(g), Int(b)))) "
         cell.textLabel!.font = UIFont.systemFont(ofSize: 20) 
@@ -87,7 +90,7 @@ class RGBchecker:UIViewController,UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 60
+            return 50
         }
    
     override func viewDidLoad() {
@@ -96,4 +99,16 @@ class RGBchecker:UIViewController,UITableViewDelegate,UITableViewDataSource{
         RGBTable.delegate = self
         RGBTable.dataSource = self
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let SaveRGBNavCon = segue.destination as? UINavigationController,
+           let NextSaveRGBNavCon = SaveRGBNavCon.topViewController as? RGBSave{
+            NextSaveRGBNavCon.SecondRed = red
+            NextSaveRGBNavCon.SecondGreen = green
+            NextSaveRGBNavCon.SecondBlue = blue
+        } else {
+            debugPrint("destination is not AddReminderViewController")
+        }
+    }
+    
 }
