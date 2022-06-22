@@ -29,7 +29,7 @@ class RGBList:UIViewController,UITableViewDelegate,UITableViewDataSource{
         
         cell.backgroundColor = UIColor(red:RedList![indexPath.row] as! CGFloat/255,green:GreenList![indexPath.row] as! CGFloat/255, blue:BlueList![indexPath.row] as! CGFloat/255, alpha: 1)
         cell.textLabel!.text = "ProjectName:\(NameList![indexPath.row] as! String)" +
-        "  #\(String(NSString(format: "%02X%02X%02X", Int(RedList![indexPath.row]  as! CGFloat), Int(GreenList![indexPath.row]  as! CGFloat), Int(BlueList![indexPath.row]  as! CGFloat))))"
+        "     #\(String(NSString(format: "%02X%02X%02X", Int(RedList![indexPath.row]  as! CGFloat), Int(GreenList![indexPath.row]  as! CGFloat), Int(BlueList![indexPath.row]  as! CGFloat))))"
         cell.textLabel!.font = UIFont.systemFont(ofSize: 20)
         
         return cell

@@ -1,0 +1,6 @@
+framework module Pods_RGBchecker_Ver_2_RGBchecker_Ver_2UITests {
+  umbrella header "Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

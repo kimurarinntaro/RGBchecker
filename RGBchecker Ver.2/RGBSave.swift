@@ -7,14 +7,41 @@
 
 import UIKit
 
-class RGBSave:UIViewController,UITableViewDelegate,UITableViewDataSource{
-    
-    @IBOutlet weak var RGBSaveTable: UITableView!
-    @IBOutlet weak var ProjectTextField: UITextField!
+class RGBSave:UIViewController,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
     
     var SecondRed:CGFloat = 0.0
     var SecondGreen:CGFloat = 0.0
     var SecondBlue:CGFloat = 0.0
+    var ProjectName:String = ""
+    
+    @IBOutlet weak var RGBSaveTable: UITableView!
+    @IBOutlet weak var ProjectTextField: UITextField!
+
+    @IBAction func SaveButton(_ sender: UIButton) {
+        
+        if let text = ProjectTextField.text {
+            ProjectName = String(text)
+            
+            RGBchecker.RedColorList.append(SecondRed)
+            RGBchecker.GreenColorList.append(SecondGreen)
+            RGBchecker.BlueColorList.append(SecondBlue)
+            RGBchecker.ListProjectName.append(ProjectName)
+            UserDefaults.standard.set(RGBchecker.RedColorList, forKey: "R")
+            UserDefaults.standard.set(RGBchecker.GreenColorList, forKey: "G")
+            UserDefaults.standard.set(RGBchecker.BlueColorList, forKey: "B")
+            UserDefaults.standard.set(RGBchecker.ListProjectName,forKey: "Name")
+            
+            dismiss(animated: true, completion: nil)
+        } else {
+            debugPrint("RGBSave ProjectTextField Error")
+        }
+        
+    }
+    
+    @IBAction func CancelButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -30,20 +57,9 @@ class RGBSave:UIViewController,UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     
-    @IBAction func SaveButton(_ sender: UIButton) {
-        RGBchecker.RedColorList.append(SecondRed)
-        RGBchecker.GreenColorList.append(SecondGreen)
-        RGBchecker.BlueColorList.append(SecondBlue)
-        RGBchecker.ListProjectName.append(ProjectTextField.text ?? "default")
-        UserDefaults.standard.set(RGBchecker.RedColorList, forKey: "R")
-        UserDefaults.standard.set(RGBchecker.GreenColorList, forKey: "G")
-        UserDefaults.standard.set(RGBchecker.BlueColorList, forKey: "B")
-        UserDefaults.standard.set(RGBchecker.ListProjectName,forKey: "Name")
-        dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func CancelButton(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     override func viewDidLoad() {
@@ -51,6 +67,11 @@ class RGBSave:UIViewController,UITableViewDelegate,UITableViewDataSource{
         // Do any additional setup after loading the view.
         RGBSaveTable.delegate = self
         RGBSaveTable.dataSource = self
+        ProjectTextField.delegate = self
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
 }

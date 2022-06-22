@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RGBchecker:UIViewController,UITableViewDelegate,UITableViewDataSource{
+class RGBchecker:UIViewController,UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     @IBOutlet weak var RedColor: UILabel!
     @IBOutlet weak var GreenColor: UILabel!
@@ -19,21 +19,23 @@ class RGBchecker:UIViewController,UITableViewDelegate,UITableViewDataSource{
     var green:CGFloat = 255
     var blue:CGFloat = 255
     
-    static var RedColorList:[CGFloat] = []
-    static var GreenColorList:[CGFloat] = []
-    static var BlueColorList:[CGFloat] = []
-    static var ListProjectName:[String] = []
+    static var RedColorList = UserDefaults.standard.array(forKey: "R")!
+    static var GreenColorList = UserDefaults.standard.array(forKey: "G")!
+    static var BlueColorList = UserDefaults.standard.array(forKey: "B")!
+    static var ListProjectName = UserDefaults.standard.array(forKey: "Name")!
     
     @IBAction func RedSlider(_ sender: UISlider) {
         red = CGFloat(sender.value)
         RedColor.text = "R:\(String(format: "%.0f", red))"
         ChangeText()
     }
+    
     @IBAction func GreenSlider(_ sender: UISlider) {
         green = CGFloat(sender.value)
         GreenColor.text = "G:\(String(format: "%.0f", green))"
         ChangeText()
     }
+    
     @IBAction func BlueSlider(_ sender: UISlider) {
         blue = CGFloat(sender.value)
         BlueColor.text = "B:\(String(format: "%.0f", blue))"
@@ -46,7 +48,6 @@ class RGBchecker:UIViewController,UITableViewDelegate,UITableViewDataSource{
     }
     
     
-    
     func CheckValue(value:Int) -> Int{
         var value = value
         if value > 255 {
@@ -56,6 +57,7 @@ class RGBchecker:UIViewController,UITableViewDelegate,UITableViewDataSource{
         }
         return value
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 7
@@ -107,8 +109,9 @@ class RGBchecker:UIViewController,UITableViewDelegate,UITableViewDataSource{
             NextSaveRGBNavCon.SecondGreen = green
             NextSaveRGBNavCon.SecondBlue = blue
         } else {
-            debugPrint("destination is not AddReminderViewController")
+            debugPrint("RGBchecker prepare Error")
         }
     }
+    
     
 }

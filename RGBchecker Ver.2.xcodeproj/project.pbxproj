@@ -17,8 +17,11 @@
 		0D430D48285A13E7005426D7 /* RGBchecker_Ver_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D430D47285A13E7005426D7 /* RGBchecker_Ver_2UITestsLaunchTests.swift */; };
 		0D430D55285A158A005426D7 /* RGBchecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D430D54285A158A005426D7 /* RGBchecker.swift */; };
 		0D430D5F285B400E005426D7 /* RGBSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D430D5E285B400E005426D7 /* RGBSave.swift */; };
-		0D883E75285EF2F1000FA202 /* InMemoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D883E74285EF2F1000FA202 /* InMemoryList.swift */; };
+		0D883E79286050F2000FA202 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D883E78286050F2000FA202 /* CameraViewController.swift */; };
 		0DB39B0B285C4EE200AC6A92 /* RGBList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB39B0A285C4EE200AC6A92 /* RGBList.swift */; };
+		20111D2B0D044484193B17B2 /* Pods_RGBchecker_Ver_2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44BEFB984EF9A03753599EC /* Pods_RGBchecker_Ver_2Tests.framework */; };
+		727723BF8530F6D20ECBEC55 /* Pods_RGBchecker_Ver_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EF4BACC2CA1731119CC77F /* Pods_RGBchecker_Ver_2.framework */; };
+		E662AB62D317105A2021012E /* Pods_RGBchecker_Ver_2_RGBchecker_Ver_2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7858BDC45C639A752E3CC195 /* Pods_RGBchecker_Ver_2_RGBchecker_Ver_2UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +56,17 @@
 		0D430D47285A13E7005426D7 /* RGBchecker_Ver_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBchecker_Ver_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0D430D54285A158A005426D7 /* RGBchecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBchecker.swift; sourceTree = "<group>"; };
 		0D430D5E285B400E005426D7 /* RGBSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSave.swift; sourceTree = "<group>"; };
-		0D883E74285EF2F1000FA202 /* InMemoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryList.swift; sourceTree = "<group>"; };
+		0D883E78286050F2000FA202 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		0DB39B0A285C4EE200AC6A92 /* RGBList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBList.swift; sourceTree = "<group>"; };
+		22AF622D158D50B1908C8CE5 /* Pods-RGBchecker Ver.2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGBchecker Ver.2Tests.release.xcconfig"; path = "Target Support Files/Pods-RGBchecker Ver.2Tests/Pods-RGBchecker Ver.2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4468156D774F9F5B92C3CA67 /* Pods-RGBchecker Ver.2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGBchecker Ver.2.debug.xcconfig"; path = "Target Support Files/Pods-RGBchecker Ver.2/Pods-RGBchecker Ver.2.debug.xcconfig"; sourceTree = "<group>"; };
+		63EF4BACC2CA1731119CC77F /* Pods_RGBchecker_Ver_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGBchecker_Ver_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7858BDC45C639A752E3CC195 /* Pods_RGBchecker_Ver_2_RGBchecker_Ver_2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGBchecker_Ver_2_RGBchecker_Ver_2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B066CA485E8602C22A3E664 /* Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests.debug.xcconfig"; path = "Target Support Files/Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests/Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C069F403BA51C581478CCA6 /* Pods-RGBchecker Ver.2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGBchecker Ver.2.release.xcconfig"; path = "Target Support Files/Pods-RGBchecker Ver.2/Pods-RGBchecker Ver.2.release.xcconfig"; sourceTree = "<group>"; };
+		A44BEFB984EF9A03753599EC /* Pods_RGBchecker_Ver_2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RGBchecker_Ver_2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47CF9DF0C99F46D2778530A /* Pods-RGBchecker Ver.2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGBchecker Ver.2Tests.debug.xcconfig"; path = "Target Support Files/Pods-RGBchecker Ver.2Tests/Pods-RGBchecker Ver.2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC44BA438D568BA065FE3B4E /* Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests.release.xcconfig"; path = "Target Support Files/Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests/Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				727723BF8530F6D20ECBEC55 /* Pods_RGBchecker_Ver_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20111D2B0D044484193B17B2 /* Pods_RGBchecker_Ver_2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E662AB62D317105A2021012E /* Pods_RGBchecker_Ver_2_RGBchecker_Ver_2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +104,8 @@
 				0D430D3A285A13E7005426D7 /* RGBchecker Ver.2Tests */,
 				0D430D44285A13E7005426D7 /* RGBchecker Ver.2UITests */,
 				0D430D22285A13E6005426D7 /* Products */,
+				DA7EAF2D0981A16E1993D5BA /* Pods */,
+				67B643C5E77F6F30CB040829 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,7 +127,7 @@
 				0D430D54285A158A005426D7 /* RGBchecker.swift */,
 				0D430D5E285B400E005426D7 /* RGBSave.swift */,
 				0DB39B0A285C4EE200AC6A92 /* RGBList.swift */,
-				0D883E74285EF2F1000FA202 /* InMemoryList.swift */,
+				0D883E78286050F2000FA202 /* CameraViewController.swift */,
 				0D430D2A285A13E6005426D7 /* Main.storyboard */,
 				0D430D2D285A13E7005426D7 /* Assets.xcassets */,
 				0D430D2F285A13E7005426D7 /* LaunchScreen.storyboard */,
@@ -136,6 +153,29 @@
 			path = "RGBchecker Ver.2UITests";
 			sourceTree = "<group>";
 		};
+		67B643C5E77F6F30CB040829 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63EF4BACC2CA1731119CC77F /* Pods_RGBchecker_Ver_2.framework */,
+				7858BDC45C639A752E3CC195 /* Pods_RGBchecker_Ver_2_RGBchecker_Ver_2UITests.framework */,
+				A44BEFB984EF9A03753599EC /* Pods_RGBchecker_Ver_2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA7EAF2D0981A16E1993D5BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4468156D774F9F5B92C3CA67 /* Pods-RGBchecker Ver.2.debug.xcconfig */,
+				7C069F403BA51C581478CCA6 /* Pods-RGBchecker Ver.2.release.xcconfig */,
+				7B066CA485E8602C22A3E664 /* Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests.debug.xcconfig */,
+				BC44BA438D568BA065FE3B4E /* Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests.release.xcconfig */,
+				A47CF9DF0C99F46D2778530A /* Pods-RGBchecker Ver.2Tests.debug.xcconfig */,
+				22AF622D158D50B1908C8CE5 /* Pods-RGBchecker Ver.2Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D430D4B285A13E7005426D7 /* Build configuration list for PBXNativeTarget "RGBchecker Ver.2" */;
 			buildPhases = (
+				BA8BD03F6E6F9775842B7492 /* [CP] Check Pods Manifest.lock */,
 				0D430D1D285A13E6005426D7 /* Sources */,
 				0D430D1E285A13E6005426D7 /* Frameworks */,
 				0D430D1F285A13E6005426D7 /* Resources */,
+				E80CEA5C1EFF52F59405EF79 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D430D4E285A13E7005426D7 /* Build configuration list for PBXNativeTarget "RGBchecker Ver.2Tests" */;
 			buildPhases = (
+				EBF42B404DCF2FBF4A3FA920 /* [CP] Check Pods Manifest.lock */,
 				0D430D33285A13E7005426D7 /* Sources */,
 				0D430D34285A13E7005426D7 /* Frameworks */,
 				0D430D35285A13E7005426D7 /* Resources */,
@@ -178,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D430D51285A13E7005426D7 /* Build configuration list for PBXNativeTarget "RGBchecker Ver.2UITests" */;
 			buildPhases = (
+				F5C052B4CD97633E9C4B4CA5 /* [CP] Check Pods Manifest.lock */,
 				0D430D3D285A13E7005426D7 /* Sources */,
 				0D430D3E285A13E7005426D7 /* Frameworks */,
 				0D430D3F285A13E7005426D7 /* Resources */,
+				0F6926F44BDBC5F3E56C623A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,17 +307,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F6926F44BDBC5F3E56C623A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests/Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests/Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests/Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA8BD03F6E6F9775842B7492 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RGBchecker Ver.2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E80CEA5C1EFF52F59405EF79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RGBchecker Ver.2/Pods-RGBchecker Ver.2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RGBchecker Ver.2/Pods-RGBchecker Ver.2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RGBchecker Ver.2/Pods-RGBchecker Ver.2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF42B404DCF2FBF4A3FA920 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RGBchecker Ver.2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C052B4CD97633E9C4B4CA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D430D1D285A13E6005426D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0DB39B0B285C4EE200AC6A92 /* RGBList.swift in Sources */,
-				0D883E75285EF2F1000FA202 /* InMemoryList.swift in Sources */,
 				0D430D5F285B400E005426D7 /* RGBSave.swift in Sources */,
 				0D430D25285A13E6005426D7 /* AppDelegate.swift in Sources */,
 				0D430D27285A13E6005426D7 /* SceneDelegate.swift in Sources */,
 				0D430D55285A158A005426D7 /* RGBchecker.swift in Sources */,
+				0D883E79286050F2000FA202 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +585,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -446,11 +595,13 @@
 		};
 		0D430D4C285A13E7005426D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4468156D774F9F5B92C3CA67 /* Pods-RGBchecker Ver.2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DPMJDDUZ8D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "RGBchecker Ver.2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -473,11 +624,13 @@
 		};
 		0D430D4D285A13E7005426D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C069F403BA51C581478CCA6 /* Pods-RGBchecker Ver.2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DPMJDDUZ8D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "RGBchecker Ver.2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -500,11 +653,13 @@
 		};
 		0D430D4F285A13E7005426D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47CF9DF0C99F46D2778530A /* Pods-RGBchecker Ver.2Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DPMJDDUZ8D;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -524,11 +679,13 @@
 		};
 		0D430D50285A13E7005426D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22AF622D158D50B1908C8CE5 /* Pods-RGBchecker Ver.2Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DPMJDDUZ8D;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -548,10 +705,12 @@
 		};
 		0D430D52285A13E7005426D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B066CA485E8602C22A3E664 /* Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DPMJDDUZ8D;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -570,10 +729,12 @@
 		};
 		0D430D53285A13E7005426D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC44BA438D568BA065FE3B4E /* Pods-RGBchecker Ver.2-RGBchecker Ver.2UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DPMJDDUZ8D;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
