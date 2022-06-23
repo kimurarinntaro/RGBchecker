@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "261F776A-4E42-4641-BBF4-46611DC75A20"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "974CC48C-EC99-4F50-A653-4F28938F54BE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RGBchecker Ver.2/RGBchecker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "RGBchecker"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "974CC48C-EC99-4F50-A653-4F28938F54BE - 26a0163a0a9c2185"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RGBchecker_Ver_2.RGBchecker.RedColor.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "RGBchecker Ver.2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rintarokimura/Desktop/RGBchecker%20Ver.2/RGBchecker%20Ver.2/RGBchecker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "974CC48C-EC99-4F50-A653-4F28938F54BE - 8647933f5db26db1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RGBchecker_Ver_2.RGBchecker.RedColor.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "RGBchecker Ver.2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rintarokimura/Desktop/RGBchecker%20Ver.2/RGBchecker%20Ver.2/RGBchecker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "974CC48C-EC99-4F50-A653-4F28938F54BE - 4965ceaf310c4086"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RGBchecker_Ver_2.RGBchecker.RedColor.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "RGBchecker Ver.2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rintarokimura/Desktop/RGBchecker%20Ver.2/RGBchecker%20Ver.2/RGBchecker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "974CC48C-EC99-4F50-A653-4F28938F54BE - f6862967df694a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RGBchecker_Ver_2.RGBchecker.RedColor.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "RGBchecker Ver.2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rintarokimura/Desktop/RGBchecker%20Ver.2/RGBchecker%20Ver.2/RGBchecker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "974CC48C-EC99-4F50-A653-4F28938F54BE - 1fb0ca5e166a757e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RGBchecker_Ver_2.RGBchecker.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; RGBchecker_Ver_2.RGBchecker"
+                  moduleName = "RGBchecker Ver.2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rintarokimura/Desktop/RGBchecker%20Ver.2/RGBchecker%20Ver.2/RGBchecker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "974CC48C-EC99-4F50-A653-4F28938F54BE - 958adfd4654eeaf4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RGBchecker_Ver_2.RGBchecker.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;RGBchecker_Ver_2.RGBchecker&gt;"
+                  moduleName = "RGBchecker Ver.2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rintarokimura/Desktop/RGBchecker%20Ver.2/RGBchecker%20Ver.2/RGBchecker.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

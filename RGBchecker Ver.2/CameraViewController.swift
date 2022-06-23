@@ -9,9 +9,10 @@ import Foundation
 import UIKit
 import ChameleonFramework
 
-class CameraViewController:UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate, UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
+class CameraViewController:UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate, UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
     
     var color: UIColor!
+//    var color2:[UIColor]!
     var RedFloat:CGFloat = 0.0
     var GreenFloat:CGFloat = 0.0
     var BlueFloat:CGFloat = 0.0
@@ -50,7 +51,7 @@ class CameraViewController:UIViewController, UIImagePickerControllerDelegate,UIN
         } else {
             debugPrint("CameraViewController ProjectTextFiled Error")
         }
-        
+
     }
     
     @IBAction func selectPicture(_ sender: UIBarButtonItem) {
@@ -72,6 +73,7 @@ class CameraViewController:UIViewController, UIImagePickerControllerDelegate,UIN
             picker.delegate = self
             // ビューに表示
             self.present(picker, animated: true)
+            
         }
     }
     
@@ -79,11 +81,13 @@ class CameraViewController:UIViewController, UIImagePickerControllerDelegate,UIN
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         self.imageView.image = image
-        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        
         // imageの平均色を取得
         color = UIColor(averageColorFrom: image)
-        // imageの色抽出
-//        color = ColorsFromImage(image, withFlatScheme: true)
+        
+//        imageの色取得（5色）
+//        color2 = ColorsFromImage(image, withFlatScheme: true)
+        
         ImageTableView.reloadData()
         self.dismiss(animated: true)
     }
@@ -96,15 +100,15 @@ class CameraViewController:UIViewController, UIImagePickerControllerDelegate,UIN
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "ImageTableViewCell")
         
-        if let UIRGBcolor = color {
+        if let RGBUIcolor = color {
             let array:[String]
-            array = UIRGBcolor.description.components(separatedBy: " ")
-            
+            array = RGBUIcolor.description.components(separatedBy: " ")
+
             let RedNumFormat = NumberFormatter().number(from: array[1])
             let GreenNumFormat = NumberFormatter().number(from: array[2])
             let BlueNumFormat = NumberFormatter().number(from: array[3])
             let AlphaFormat = NumberFormatter().number(from: array[4])
-            
+
             func guardColor (){
                 guard let Red = RedNumFormat else {
                     debugPrint("CameraViewController RedFloat Error")
@@ -122,7 +126,7 @@ class CameraViewController:UIViewController, UIImagePickerControllerDelegate,UIN
                     debugPrint("CameraViewController AlphaFloat Error")
                     return
                 }
-                
+
                 RedFloat = CGFloat(truncating: Red)
                 GreenFloat = CGFloat(truncating: Green)
                 BlueFloat = CGFloat(truncating: Blue)
@@ -130,15 +134,16 @@ class CameraViewController:UIViewController, UIImagePickerControllerDelegate,UIN
 
             }
             guardColor()
-            
+
             cell.backgroundColor = UIColor(red: RedFloat, green: GreenFloat, blue: BlueFloat, alpha: AlphaFloat)
             cell.textLabel!.text = " #\(String(NSString(format: "%02X%02X%02X", Int(RedFloat*255), Int(GreenFloat*255), Int(BlueFloat*255)))) "
             cell.textLabel!.font = UIFont.systemFont(ofSize: 20)
-            
+
         } else {
             debugPrint("CameraViewController Optionaltype color in nil Error")
         }
         
+//        debugPrint(color2 as Any)
         return cell
     }
     
