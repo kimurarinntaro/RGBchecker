@@ -110,6 +110,7 @@ class RGBchecker:UIViewController,UITableViewDelegate,UITableViewDataSource,UIIm
             NextSaveRGBNavCon.SecondBlue = blue
         } else {
             debugPrint("RGBchecker prepare Error")
+            debugPrint(type(of: red))
         }
     }
     

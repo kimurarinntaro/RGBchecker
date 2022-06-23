@@ -80,9 +80,11 @@ class CameraViewController:UIViewController,UIImagePickerControllerDelegate,UINa
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        
+//        imageViewに画像を表示
         self.imageView.image = image
         
-        // imageの平均色を取得
+//        imageの平均色を取得
         color = UIColor(averageColorFrom: image)
         
 //        imageの色取得（5色）

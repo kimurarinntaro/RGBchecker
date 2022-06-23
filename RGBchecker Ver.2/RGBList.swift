@@ -21,16 +21,51 @@ class RGBList:UIViewController,UITableViewDelegate,UITableViewDataSource{
     @IBOutlet weak var RGBListTable: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return NameList!.count
+        
+        var ProjectCount:[Any] = []
+        if let unwrapNameList = NameList{
+            ProjectCount = unwrapNameList
+        } else {
+            debugPrint("RGBList ProjectCount Error")
+        }
+        return ProjectCount.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "RGBListCell")
         
-        cell.backgroundColor = UIColor(red:RedList![indexPath.row] as! CGFloat/255,green:GreenList![indexPath.row] as! CGFloat/255, blue:BlueList![indexPath.row] as! CGFloat/255, alpha: 1)
-        cell.textLabel!.text = "ProjectName:\(NameList![indexPath.row] as! String)" +
-        "     #\(String(NSString(format: "%02X%02X%02X", Int(RedList![indexPath.row]  as! CGFloat), Int(GreenList![indexPath.row]  as! CGFloat), Int(BlueList![indexPath.row]  as! CGFloat))))"
-        cell.textLabel!.font = UIFont.systemFont(ofSize: 20)
+        func guardList(){
+            guard let R = RedList else {
+                debugPrint("RGBList RedList Error")
+                return
+            }
+            guard let G = GreenList else {
+                debugPrint("RGBList GreenList Error")
+                return
+            }
+            guard let B = BlueList else {
+                debugPrint("RGBList BlueList Error")
+                return
+            }
+            guard let Name = NameList else {
+                debugPrint("RGBList NameList Error")
+                return
+            }
+    
+            
+            cell.backgroundColor = UIColor(red:R[indexPath.row] as! CGFloat/255,green:G[indexPath.row] as! CGFloat/255, blue:B[indexPath.row] as! CGFloat/255, alpha: 1)
+            cell.textLabel!.text = "ProjectName:\(Name[indexPath.row] as! String)" +
+            "     #\(String(NSString(format: "%02X%02X%02X", Int(R[indexPath.row]  as! CGFloat), Int(G[indexPath.row]  as! CGFloat), Int(B[indexPath.row]  as! CGFloat))))"
+            cell.textLabel!.font = UIFont.systemFont(ofSize: 20)
+            
+        }
+        guardList()
+        
+//        cell.backgroundColor = UIColor(red:RedList![indexPath.row] as! CGFloat/255,green:GreenList![indexPath.row] as! CGFloat/255, blue:BlueList![indexPath.row] as! CGFloat/255, alpha: 1)
+//        cell.textLabel!.text = "ProjectName:\(NameList![indexPath.row] as! String)" +
+//        "     #\(String(NSString(format: "%02X%02X%02X", Int(RedList![indexPath.row]  as! CGFloat), Int(GreenList![indexPath.row]  as! CGFloat), Int(BlueList![indexPath.row]  as! CGFloat))))"
+//        cell.textLabel!.font = UIFont.systemFont(ofSize: 20)
         
         return cell
         
