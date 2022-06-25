@@ -145,7 +145,6 @@ class CameraViewController:UIViewController,UIImagePickerControllerDelegate,UINa
             debugPrint("CameraViewController Optionaltype color in nil Error")
         }
         
-//        debugPrint(color2 as Any)
         return cell
     }
     
@@ -167,3 +166,4 @@ class CameraViewController:UIViewController,UIImagePickerControllerDelegate,UINa
     }
     
 }
+
